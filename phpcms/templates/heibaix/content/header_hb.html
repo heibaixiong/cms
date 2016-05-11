@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+    <link rel="stylesheet" href="{WEB_PATH}statics/heibaix/css/new_base.css">
+    <link rel="stylesheet" href="{WEB_PATH}statics/heibaix/css/common_other.css">
+    <link rel="stylesheet" href="{WEB_PATH}statics/heibaix/css/others.css">
+<script type="text/javascript" src="{JS_PATH}jquery.min.js"></script>
+</head>
+<body>
+<!--页头-->
+<div class="header">
+    <div class="header_top">
+        <ul class="header_box">
+            <li><a href="{siteurl($siteid)}">首页</a></li>
+            <li{if $parentid == 15} class="current_a"{/if}><a href="{$CATEGORYS[18][url]}">集团业务</a></li>
+            <li{if $parentid == 1 && $catid <> 2} class="current_a"{/if}><a href="{$CATEGORYS[3][url]}">关于黑白熊</a></li>
+            <li{if $catid == 2} class="current_a"{/if}><a href="{$CATEGORYS[2][url]}">企业文化</a></li>
+            <li{if $catid == 30} class="current_a"{/if}><a href="{$CATEGORYS[30][url]}">新闻中心</a></li>
+            <li{if $parentid == 16} class="current_a"{/if}><a href="{$CATEGORYS[33][url]}">人力资源</a></li>
+            <li{if $parentid == 17 && $catid <> 26} class="current_a"{/if}><a href="{$CATEGORYS[27][url]}">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="header_center">
+        <a href="{WEB_PATH}"><img src="{WEB_PATH}statics/heibaix/images/logo.png"></a>
+        <a></a>
+    </div>
+    <div class="header_bottom">
+        <ul class="bom_box">
+            {loop $arrchild_arr $cid}
+            <li{if $catid==$cid} class="current_a02"{/if}><a href="{$CATEGORYS[$cid][url]}">{$CATEGORYS[$cid][catname]}</a></li>
+            {/loop}
+        </ul>
+    </div>
+</div>

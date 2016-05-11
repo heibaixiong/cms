@@ -1,0 +1,76 @@
+<!--页脚-->
+<div class="foot_xia">
+	<div class="foot_center">
+		<div class="foot_center_left">
+			<ul>
+				<li class="current_top1"><a href="{$CATEGORYS[3][url]}">关于黑白熊</a></li>
+				{pc:content action="category" catid="1" num="15" siteid="$siteid" order="listorder ASC"}
+				{loop $data $r}
+				<li><a href="{$r[url]}">{$r[catname]}</a></li>
+				{/loop}
+				{/pc}
+			</ul>
+			<ul>
+				<li class="current_top1"><a href="{$CATEGORYS[18][url]}">集团企业</a></li>
+				{pc:content action="category" catid="15" num="15" siteid="$siteid" order="listorder ASC"}
+				{loop $data $r}
+				<li><a href="{$r[url]}">{$r[catname]}</a></li>
+				{/loop}
+				{/pc}
+			</ul>
+			<ul>
+				<li class="current_top1"><a href="{$CATEGORYS[33][url]}">人力资源</a></li>
+				{pc:content action="category" catid="16" num="15" siteid="$siteid" order="listorder ASC"}
+				{loop $data $r}
+				<li><a href="{$r[url]}">{$r[catname]}</a></li>
+				{/loop}
+				{/pc}
+			</ul>
+			<ul>
+				<li class="current_top1"><a href="{$CATEGORYS[27][url]}">联系我们</a></li>
+				{pc:content action="category" catid="17" num="15" siteid="$siteid" order="listorder ASC"}
+				{loop $data $r}
+				<li><a href="{$r[url]}">{$r[catname]}</a></li>
+				{/loop}
+				{/pc}
+			</ul>
+		</div>
+		<div class="foot_center_right">
+			<ul class="center_right_left">
+				<li class="current_top2"><a href="#"><img src="{WEB_PATH}statics/heibaix/images//bom_logo.png"></a></li>
+				<li class="current_qq"><a>服务热线： <br>400-653-8881</a></li>
+				<li class="current_weixin"><a>河南省郑州市管城区航海路经开第二大街兴华大厦4楼</a></li>
+
+			</ul>
+			<ul  class="center_right_right">
+				<li class="current_top2"><a>黑白熊集团</a></li>
+				<li class="current_selt">
+					<select id="select-jump-page">
+						<option value="/">首页</option>
+						<option value="http://www.dongjiayaohuo.com/">东家要货</option>
+					</select>
+				</li>
+				<li class="current_erweima"><a></a></li>
+				<li><a style="line-height:25px;font-size:14px;">扫描二维码访问官方微信</a></li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(function(){
+	$(".picbig").each(function(i){
+		var cur = $(this).find('.img-wrap').eq(0);
+		var w = cur.width();
+		var h = cur.height();
+	   $(this).find('.img-wrap img').LoadImage(true, w, h,'{IMG_PATH}msg_img/loading.gif');
+	});
+});
+	$(document).ready(function(){
+		$('#select-jump-page').on('change', function(){
+			window.open($(this).val());
+		});
+	});
+</script>
+</body>
+</html>

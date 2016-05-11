@@ -1,0 +1,300 @@
+/*关于黑白熊*/
+/*主题*/
+.main_box{
+    width:1200px;
+    margin:auto;
+}
+.main_box .main_nav{
+
+    overflow: hidden;
+}
+.main_box .main_nav a{
+    margin:30px 0;
+    font-size: 16px;
+    float:left;
+    background:url('../images/about_right.png') no-repeat center right;
+    padding-right:12px;
+    margin-right:12px;
+}
+
+.main_big .article_tittle{
+    width:346px;
+    margin:auto;
+    text-align: center;
+}
+
+.main_big .article_tittle .article_tittle01{
+    color:#f6a167;
+    font-size: 24px;
+}
+.main_big .article_tittle .article_tittle02{
+    color:#333333;
+    font-size: 24px;
+    background:url('../images/about_tittle.png') no-repeat center center;
+}
+.main_big .article_tittle02{
+    text-align: center;
+    margin-top:20px;
+}
+.main_big .article_tittle_new{
+    text-align: center;
+    margin-top:70px;
+}
+.main_big .article_tittle_new .article_tittle03{
+    font-weight: bold;
+    font-size:20px;
+    color:#333333;
+}
+.main_big .article_tittle_new .article_tittle04{
+    font-size:18px;
+    color:#333333;
+    line-height:40px;
+}
+.main_box .main_cent{
+    margin-top:35px;
+    overflow: hidden;
+    padding-bottom:50px;
+}
+
+
+.main_box .main_cent_left{
+    float:left;
+    width:551px;
+    height:410px;
+    padding:40px;
+}
+.main_box .main_cent_left img{
+    width:100%;
+}
+.main_box .main_cent_right{
+    float:left;
+    width:530px;
+}
+.main_box .main_cent_right p{
+    color:#333333;
+    font-size: 18px;
+    line-height:34px;
+    text-indent:40px;
+}
+/*关于黑白熊详情页*/
+/*主题*/
+.main_detail{
+    overflow: hidden;
+
+
+
+}
+.main_detail .detail_box{
+    float:left;
+    width:825px;
+    padding:0 38px;
+    text-align: center;
+    padding-bottom:97px;
+}
+.main_detail .detail_box .detail_tit01{
+    font-size:36px;
+    color:#020f28;
+    padding:20px 0;
+}
+.main_detail .detail_box .detail_tit02{
+    font-size:12px;
+    color:#767474;
+   text-align: right;
+}
+.main_detail .detail_title{
+    float:right;
+    margin-top:70px;
+}
+.main_detail .detail_box .detail_tit03{
+    font-size:16px;
+    color:#020f28;
+    text-align: left;
+    text-indent:35px;
+    line-height:30px;
+    margin-top:26px;
+}
+.detail_page{
+    overflow: hidden;
+    width:238px;
+    margin:100px auto;
+
+}
+.detail_page a{
+    float: left;
+}
+.detail_page .detail_page_left{
+     background:url('../images/detail_left.png') no-repeat center 5px;
+     width:19px;
+     height:27px;
+    cursor: pointer;
+ }
+.detail_page .detail_page_right{
+    background:url('../images/detail_right.png') no-repeat center 5px;
+    width:19px;
+    height:27px;
+    float: right;
+    cursor: pointer;
+}
+.detail_sx{
+    border-top:solid 1px #c1c1c1;
+    border-bottom:solid 1px #c1c1c1;
+    overflow:hidden;
+}
+.detail_sx a{
+    font-size:16px;
+    color:#020f28;
+
+}
+.detail_sx .detail_sx_shang{
+    float:left;
+    margin:27px 0;
+}
+.detail_sx  span{
+    font-weight: bold;
+    color: #333333;
+}
+.detail_sx .detail_sx_xia{
+    float:right;
+    margin:27px 0;
+}
+.detail_title li{
+    width:260px;
+    border-bottom:solid 1px #c1c1c1;
+    padding-top:25px;
+    padding-bottom:15px;
+}
+.detail_title li p a{
+    color:#333333;
+    font-size:14px;
+    line-height:26px;
+    background:url('../images/detail_dot.png') no-repeat left center;
+    padding-left:13px;
+    margin-left:-10px;
+}
+.detail_title li p span{
+    color:#767474;
+    font-size:12px;
+}
+.detail_title .detail_title_li01{
+    font-weight: bold;
+    font-size:16px;
+    color:#020f28;
+    padding: 22px 0;
+}
+/*关于黑白熊列表页*/
+/*主题*/
+.main_list{
+    overflow: hidden;
+    margin-top:75px;
+    margin-bottom:75px;
+    margin-left:-60px;
+}
+.main_list ul{
+    float:left;
+    width:360px;
+    margin-left:60px;
+    margin-bottom:50px;
+}
+.main_list .list_line01{
+    overflow: hidden;
+}
+.main_list .list_line01 .list_date{
+    float:left;
+    height:64px;
+    background:#034ea2;
+    width:64px;
+    text-align: center;
+ }
+.main_list .list_line01 .list_date .list_date01{
+    font-size:24px;
+    color:#fff;
+    font-weight: bold;
+    margin-top:10px;
+    display: block;
+
+
+}
+.main_list .list_line01 .list_date .list_date02{
+    font-size:12px;
+    color:#fff;
+    display: block;
+
+
+}
+.main_list .list_line01 .list_tittle{
+    float:right;
+    height:64px;
+    line-height:64px;
+    background:#034ea2;
+    width:265px;
+    padding-left:30px;
+    color:#fff;
+    font-size:14px;
+    font-weight: bold;
+}
+.main_list .list_line02{
+    height:220px;
+    margin-top:1px;
+    border-left:solid 1px #d9d9d9;
+    border-right:solid 1px #d9d9d9;
+
+
+}
+.main_list .list_line02 img {
+    width: 100%;
+    /*text-align: center;*/
+    /*vertical-align:middle;*/
+
+}
+/*.main_list .list_line02 span{*/
+    /*height:100%;*/
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+/*}*/
+/*.main_list .list_line02 img{*/
+    /*vertical-align: middle;*/
+
+/*}*/
+
+.main_list .list_line03{
+    padding:0 40px;
+    border:solid 1px #d9d9d9;
+    border-top:none;
+}
+.main_list .list_line03 .list_line03_cont{
+    padding:25px 0;
+}
+.main_list .list_line03 .list_line03_cont a{
+    font-size:14px;
+    colro:#999999;
+    line-height:30px;
+
+}
+.main_list .list_line03 .list_line03_more{
+    text-align: center;
+}
+.main_list .list_line03 .list_line03_more .list_line03_bg{
+    background:url('../images/list_icon01.png') no-repeat center center;
+    display: block;
+    width:278px;
+    height:7px;
+}
+.main_list .list_line03 .list_line03_more  .list_line03_mo{
+    color:#999999;
+    font-size:14px;
+    line-height:42px;
+    background:url('../images/list_icon02.png') no-repeat left center,url('../images/list_icon02.png') no-repeat right center;
+    padding:0 16px;
+}
+.list_page{
+    float:left;
+    text-align: center;
+}
+
+.list_page a{
+    float: left;
+    padding:0 0px;
+    color:#020f28;
+    font-size:24px;
+    width:66px;
+}

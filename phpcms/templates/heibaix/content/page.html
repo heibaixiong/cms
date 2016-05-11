@@ -1,0 +1,24 @@
+{template "content","header_hb"}
+<!--中图-->
+<div><img src="{WEB_PATH}statics/heibaix/images/abouut_banner.png" style="width:100%;height:auto;display: block;"></div>
+<!--内容-->
+<div class="main_box">
+    <div class="main_nav">
+        <a href="{siteurl($siteid)}">首页</a>
+        {catpos($catid, '')}
+    </div>
+    <div class="main_big">
+        <div class="article_tittle">
+            <p class="article_tittle01">Introduction</p>
+            <p class="article_tittle02">{$catname}</p>
+        </div>
+        <div class="article_tittle_new" style="display: none;">
+            <p class="article_tittle03">黑白熊集团，以地产为基础，起始于新都业市场开发，同时拥有公路、桥梁、市政等多个总承包资质及房产置业一级资质。</p>
+            <p class="article_tittle04">在中国城镇化、城乡一体化进程中，集资本运作、技术创新为一体，成为河南省独树一帜的运营商和开发商。</p>
+        </div>
+    </div>
+    <div class="main_cent">
+        {$content}
+    </div>
+</div>
+{template "content","footer"}

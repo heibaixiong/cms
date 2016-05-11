@@ -1,0 +1,53 @@
+{template "content","header_hb"}
+
+<!--中图-->
+<div><img src="{WEB_PATH}statics/heibaix/images/abouut_banner.png" style="width:100%;height:auto;display: block;"></div>
+<!--内容-->
+<div class="main_box">
+	<div class="main_nav">
+		<a href="{siteurl($siteid)}">首页</a>
+		{catpos($catid, '')}
+		<a href="#" style="background: none;">正文</a>
+	</div>
+
+	<div class="main_detail">
+		<div class="detail_box">
+			<div>
+				<p class="detail_tit01">{$title}</p>
+				<p class="detail_tit02">{date('Y.m.d',strtotime($inputtime))}</p>
+				<p class="detail_tit03">
+					{$content}
+				</p>
+				<img style="margin-top:60px; max-width: 650px;" src="{$thumb}">
+			</div>
+			<div class="detail_page">
+
+			</div>
+			<ul class="detail_sx">
+				<li class="detail_sx_shang">
+					<a href="{$previous_page[url]}"><span>上一篇：</span>{$previous_page[title]}</a>
+				</li>
+				<li class="detail_sx_xia">
+					<a href="{$next_page[url]}"><span>下一篇：</span>{$next_page[title]}</a>
+				</li>
+			</ul>
+
+		</div>
+
+		<ul class="detail_title">
+			<li class="detail_title_li01">往期内容</li>
+			{pc:content action="lists" catid="$catid" num="30" moreinfo="1" order="id DESC" page="$page"}
+			{loop $data $r}
+			<li>
+				<p><a href="{$r[url]}">{$r[title]}</a></p>
+				<p><span>{date('Y.m.d',$r[inputtime])}</span></p>
+			</li>
+			{/loop}
+			{/pc}
+		</ul>
+
+	</div>
+</div>
+
+<script language="JavaScript" src="{APP_PATH}api.php?op=count&id={$id}&modelid={$modelid}"></script>
+{template "content","footer"}

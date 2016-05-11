@@ -1,0 +1,57 @@
+{template "content","header_hb"}
+
+<!--中图-->
+<div><img src="{WEB_PATH}statics/heibaix/images/abouut_banner.png" style="width:100%;height:auto;display: block;"></div>
+<!--内容-->
+<div class="main_box">
+    <div class="main_nav">
+        <a href="{siteurl($siteid)}">首页</a>{catpos($catid, '')}<a href="" >列表</a>
+    </div>
+    <div class="main_big">
+        <div class="article_tittle">
+            <p class="article_tittle01">GROUP NEWS</p>
+            <p class="article_tittle02">集团新闻</p>
+        </div>
+    </div>
+    <div class="main_list">
+
+        {pc:content action="lists" catid="$catid" num="30" moreinfo="1" order="id DESC" page="$page"}
+            {loop $data $r}
+            <ul>
+                <li class="list_line01">
+                    <div class="list_date">
+                        <a class="list_date01">{date('d',$r[inputtime])}</a>
+                        <a class="list_date02">{date('Y.m',$r[inputtime])}</a>
+                    </div>
+                    <a class="list_tittle" href="{$r[url]}">{$r[title]}</a>
+                </li>
+                {if $r[thumb]}
+                <li class="list_line02">
+                    <a href="{$r[url]}"><img src="{$r[thumb]}" style="max-height: 201px;"></a>
+                </li>
+                {/if}
+                <li class="list_line03">
+                    <p class="list_line03_cont">
+                        <a href="{$r[url]}">
+                            {str_cut(strip_tags($r['content']),350)}
+                        </a>
+                    </p>
+                    <p class="list_line03_more">
+                        <a class="list_line03_bg"></a>
+                        <a class="list_line03_mo" href="{$r[url]}">更多详情</a>
+                    </p>
+
+                </li>
+            </ul>
+            {/loop}
+        {/pc}
+    </div>
+
+    <div class="detail_page" style="margin-bottom:56px;">
+        {$pages}
+    </div>
+
+
+</div>
+
+{template "content","footer"}
