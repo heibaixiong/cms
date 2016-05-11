@@ -1,4 +1,6 @@
 <?php
+//version 1.0.1
+
 /**
  *  index.php PHPCMS 入口
  *
